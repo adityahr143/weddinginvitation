@@ -1,0 +1,2465 @@
+/* =========================================
+   HINDI / SANSKRIT TEXT
+========================================= */
+
+.hindi-sanskrit-text {
+
+    font-family: "Noto Serif Devanagari", serif;
+
+    color: #806452;
+
+    line-height: 1.9;
+
+    font-weight: 400;
+}
+
+
+.sanskrit-shlok {
+
+    font-family: "Noto Serif Devanagari", serif;
+
+    color: #694536;
+
+    font-size: 18px;
+
+    line-height: 2;
+
+    text-align: center;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+
+.hindi-subtitle {
+
+    font-family: "Noto Serif Devanagari", serif;
+
+    color: #a2765d;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-top: 8px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .sanskrit-shlok {
+
+        font-size: 15px;
+
+        line-height: 1.9;
+
+        padding: 0 10px;
+    }
+
+
+    .hindi-subtitle {
+
+        font-size: 14px;
+
+    }
+
+}
+
+/* =========================================
+   OPENING SANSKRIT
+========================================= */
+
+.sanskrit-opening {
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+
+.sanskrit-symbol {
+
+    font-family: "Noto Serif Devanagari", serif;
+
+    font-size: 28px;
+
+    color: #9a6c50;
+
+    margin-bottom: 12px;
+}
+
+
+.sanskrit-opening .sanskrit-shlok {
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    max-width: 480px;
+}
+
+
+@media (max-width: 576px) {
+
+    .sanskrit-opening .sanskrit-shlok {
+
+        font-size: 11px;
+
+        line-height: 1.8;
+    }
+
+
+    .sanskrit-symbol {
+
+        font-size: 24px;
+    }
+
+}
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   OPENING SECTION
+========================================= */
+
+.opening-section {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 255, 255, 0.85),
+            rgba(246, 231, 216, 0.95)
+        );
+
+    color: #5c4033;
+}
+
+
+/* Soft decorative circles */
+
+.opening-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    top: -120px;
+    left: -100px;
+
+    filter: blur(10px);
+}
+
+.opening-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.3);
+
+    bottom: -120px;
+    right: -100px;
+
+    filter: blur(10px);
+}
+
+
+/* =========================================
+   INVITATION CARD
+========================================= */
+
+.invitation-card {
+
+    position: relative;
+
+    z-index: 5;
+
+    text-align: center;
+
+    padding: 55px 30px;
+
+    border-radius: 180px 180px 25px 25px;
+
+    background: rgba(255, 250, 245, 0.78);
+
+    border: 1px solid rgba(160, 120, 90, 0.25);
+
+    box-shadow:
+        0 25px 70px rgba(92, 64, 51, 0.15);
+
+    backdrop-filter: blur(8px);
+
+    animation: cardAppear 1.5s ease forwards;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.small-heading {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #806452;
+
+    margin-bottom: 20px;
+}
+
+
+.invitation-title {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(55px, 12vw, 85px);
+
+    font-weight: 400;
+
+    line-height: 0.9;
+
+    color: #744c3b;
+
+    margin-bottom: 5px;
+}
+
+
+.invitation-subtitle {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    letter-spacing: 8px;
+
+    text-transform: uppercase;
+
+    color: #92705c;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.divider {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+
+    content: "";
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #b99984;
+}
+
+.divider span {
+
+    font-size: 15px;
+
+    color: #9a6c50;
+}
+
+
+/* =========================================
+   COUPLE NAME
+========================================= */
+
+.couple-name {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 50px;
+
+    font-weight: 400;
+
+    color: #694536;
+
+    margin: 3px 0;
+}
+
+
+.and-symbol {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    color: #a2765d;
+
+    margin: 3px 0;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.wedding-date {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 16px;
+
+    letter-spacing: 4px;
+
+    color: #725344;
+
+    margin-top: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   OPEN BUTTON
+========================================= */
+
+.open-btn {
+
+    border: 1px solid #9c745e;
+
+    background: transparent;
+
+    color: #694536;
+
+    padding: 13px 24px;
+
+    border-radius: 50px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+.open-btn .arrow {
+
+    display: inline-block;
+
+    margin-left: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.open-btn:hover {
+
+    background: #694536;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(105, 69, 54, 0.25);
+}
+
+
+.open-btn:hover .arrow {
+
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   PETALS
+========================================= */
+
+.petals-container {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+
+.petal {
+
+    position: absolute;
+
+    width: 10px;
+
+    height: 16px;
+
+    border-radius: 100% 0 100% 0;
+
+    background: rgba(180, 115, 105, 0.45);
+
+    animation: fall linear infinite;
+}
+
+
+/* =========================================
+   MAIN INVITATION
+========================================= */
+
+.main-invitation {
+
+    min-height: 100vh;
+
+    padding-top: 100px;
+
+    background: #fffaf5;
+
+    color: #694536;
+}
+
+
+.section-label {
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+
+    color: #a2765d;
+
+    margin-bottom: 15px;
+}
+
+
+.section-title {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(55px, 10vw, 90px);
+
+    font-weight: 400;
+
+    margin-bottom: 20px;
+}
+
+
+.section-text {
+
+    max-width: 550px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+    color: #806452;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes cardAppear {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(40px)
+            scale(0.95);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@keyframes fall {
+
+    0% {
+
+        transform:
+            translateY(-100px)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    10% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform:
+            translateY(110vh)
+            translateX(80px)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   OPENING TRANSITION
+========================================= */
+
+.opening-section.hide {
+
+    animation: hideOpening 1.2s ease forwards;
+}
+
+
+@keyframes hideOpening {
+
+    0% {
+
+        opacity: 1;
+
+        transform: scale(1);
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform: scale(1.08);
+
+        visibility: hidden;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .invitation-card {
+
+        padding: 45px 20px;
+
+        border-radius: 150px 150px 20px 20px;
+    }
+
+    .couple-name {
+
+        font-size: 45px;
+    }
+
+    .wedding-date {
+
+        font-size: 13px;
+
+        letter-spacing: 3px;
+    }
+
+    .small-heading {
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+}
+/* =========================================
+   SAVE THE DATE
+========================================= */
+
+.save-date-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 0;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #fff,
+            #f8eee5
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.date-card {
+
+    max-width: 430px;
+
+    margin: 40px auto 0;
+
+    padding: 50px 30px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border: 1px solid rgba(160, 120, 90, 0.25);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(92, 64, 51, 0.12);
+
+    position: relative;
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+.date-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 30px 70px rgba(92, 64, 51, 0.18);
+}
+
+
+.date-month {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 22px;
+
+    letter-spacing: 7px;
+
+    color: #896552;
+}
+
+
+.date-day {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 120px;
+
+    line-height: 1;
+
+    color: #694536;
+
+    margin: 15px 0;
+}
+
+
+.date-year {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 24px;
+
+    letter-spacing: 6px;
+
+    color: #896552;
+}
+
+
+.date-divider {
+
+    width: 80px;
+
+    height: 1px;
+
+    background: #b99984;
+
+    margin: 25px auto;
+}
+
+
+.date-message {
+
+    max-width: 300px;
+
+    margin: auto;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #806452;
+}
+
+/* =========================================
+   COUPLE SECTION
+========================================= */
+
+.couple-section {
+
+    min-height: 100vh;
+
+    padding: 100px 0;
+
+    background: #fffaf5;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Person Card */
+
+.person-card {
+
+    text-align: center;
+
+    max-width: 420px;
+
+    margin: auto;
+
+    transition: transform 0.6s ease;
+}
+
+
+.person-card:hover {
+
+    transform: translateY(-10px);
+}
+
+
+/* Image */
+
+.person-image-wrapper {
+
+    width: 280px;
+
+    height: 360px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    position: relative;
+
+    border-radius: 150px 150px 25px 25px;
+
+    border: 1px solid rgba(160, 120, 90, 0.3);
+
+    box-shadow:
+        0 20px 50px rgba(92, 64, 51, 0.15);
+}
+
+
+.person-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.8s ease;
+}
+
+
+.person-card:hover .person-image {
+
+    transform: scale(1.08);
+}
+
+
+/* Image overlay */
+
+.person-image-wrapper::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(80, 50, 40, 0.18),
+            transparent 45%
+        );
+
+    pointer-events: none;
+}
+
+
+/* Person information */
+
+.person-info {
+
+    padding: 25px 20px;
+}
+
+
+.person-role {
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-size: 11px;
+
+    color: #a2765d;
+
+    margin-bottom: 8px;
+}
+
+
+.person-info h3 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 50px;
+
+    font-weight: 400;
+
+    color: #694536;
+
+    margin-bottom: 10px;
+}
+
+
+.person-info p:last-child {
+
+    max-width: 330px;
+
+    margin: auto;
+
+    color: #806452;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .couple-section {
+
+        padding: 80px 0;
+    }
+
+    .person-image-wrapper {
+
+        width: 230px;
+
+        height: 300px;
+    }
+
+    .person-info h3 {
+
+        font-size: 45px;
+    }
+
+}
+
+/* =========================================
+   WEDDING EVENTS
+========================================= */
+
+.events-section {
+
+    min-height: 100vh;
+
+    padding: 100px 0;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #fff,
+            #f8eee5
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.events-heading {
+
+    margin-bottom: 55px;
+}
+
+
+.events-list {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+/* Event Card */
+
+.event-card {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 30px 25px;
+
+    background: rgba(255, 255, 255, 0.68);
+
+    border: 1px solid rgba(160, 120, 90, 0.25);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 18px 50px rgba(92, 64, 51, 0.10);
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+.event-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 25px 60px rgba(92, 64, 51, 0.16);
+}
+
+
+/* Event Icon */
+
+.event-icon {
+
+    flex-shrink: 0;
+
+    width: 70px;
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(160, 120, 90, 0.35);
+
+    color: #9a6c50;
+
+    font-size: 20px;
+
+    font-family: "Cormorant Garamond", serif;
+}
+
+
+/* Event Content */
+
+.event-content {
+
+    flex: 1;
+
+}
+
+
+.event-number {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    color: #b08a74;
+
+    margin-bottom: 3px;
+}
+
+
+.event-type {
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 10px;
+
+    color: #a2765d;
+
+    margin-bottom: 3px;
+}
+
+
+.event-content h3 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 48px;
+
+    font-weight: 400;
+
+    color: #694536;
+
+    margin: 0;
+}
+
+
+.event-divider {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #b99984;
+
+    margin: 10px 0;
+}
+
+
+.event-details {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 17px;
+
+    color: #725344;
+
+    margin-bottom: 3px;
+}
+
+
+.event-venue {
+
+    font-size: 12px;
+
+    color: #806452;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   EVENTS MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .events-section {
+
+        padding: 80px 0;
+    }
+
+
+    .events-heading {
+
+        margin-bottom: 40px;
+    }
+
+
+    .events-list {
+
+        gap: 22px;
+    }
+
+
+    .event-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+
+    .event-icon {
+
+        width: 60px;
+
+        height: 60px;
+
+        font-size: 18px;
+    }
+
+
+    .event-content h3 {
+
+        font-size: 45px;
+    }
+
+
+    .event-divider {
+
+        margin: 10px auto;
+    }
+
+
+    .event-details {
+
+        font-size: 16px;
+    }
+
+}
+
+/* =========================================
+   EVENT PHOTOS
+========================================= */
+
+.event-photo-wrapper {
+
+    width: 390px;
+
+    height: 700px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(160, 120, 90, 0.25);
+
+    box-shadow:
+        0 12px 35px rgba(92, 64, 51, 0.14);
+}
+
+
+.event-photo {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.7s ease;
+}
+
+
+.event-card:hover .event-photo {
+
+    transform: scale(1.06);
+}
+
+
+/* Hindi event name */
+
+.event-hindi-name {
+
+    font-family: "Noto Serif Devanagari", serif;
+
+    color: #a2765d;
+
+    font-size: 14px;
+
+    margin-top: 4px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .event-photo-wrapper {
+
+        width: 100%;
+
+        height: 230px;
+
+        border-radius: 20px;
+    }
+
+
+    .event-hindi-name {
+
+        font-size: 13px;
+    }
+
+}
+
+/* =========================================
+   WEDDING INVITATION MESSAGE
+========================================= */
+
+.invitation-message-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 100px 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fff,
+            #f7ebe1
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.invitation-message-content {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+
+/* Ornament */
+
+.message-ornament {
+
+    font-size: 18px;
+
+    color: #a2765d;
+
+    margin-bottom: 25px;
+
+    animation:
+        ornamentFloat 3s ease-in-out infinite;
+}
+
+
+.bottom-ornament {
+
+    margin-top: 30px;
+
+    margin-bottom: 0;
+}
+
+
+/* Heading */
+
+.invitation-message-content h2 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(55px, 12vw, 80px);
+
+    font-weight: 400;
+
+    color: #694536;
+
+    margin: 0 0 20px;
+}
+
+
+/* Divider */
+
+.message-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 10px 0 30px;
+}
+
+
+.message-divider::before,
+.message-divider::after {
+
+    content: "";
+
+    width: 60px;
+
+    height: 1px;
+
+    background: #b99984;
+}
+
+
+.message-divider span {
+
+    color: #a2765d;
+
+    font-size: 16px;
+}
+
+
+/* Message */
+
+.invitation-message-text {
+
+    max-width: 500px;
+
+    margin: 0 auto 18px;
+
+    color: #806452;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+
+/* Names */
+
+.message-names {
+
+    margin-top: 35px;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 50px;
+
+    color: #694536;
+}
+
+
+.message-names span {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    color: #a2765d;
+
+    margin: 0 8px;
+}
+
+
+/* =========================================
+   MESSAGE ANIMATION
+========================================= */
+
+@keyframes ornamentFloat {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+    }
+
+    50% {
+
+        transform: translateY(-6px);
+    }
+
+}
+
+
+/* =========================================
+   MESSAGE MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .invitation-message-section {
+
+        padding: 80px 20px;
+    }
+
+
+    .invitation-message-content {
+
+        padding: 20px 5px;
+    }
+
+
+    .message-ornament {
+
+        margin-bottom: 20px;
+    }
+
+
+    .invitation-message-content h2 {
+
+        font-size: 58px;
+
+        line-height: 1.1;
+    }
+
+
+    .message-divider {
+
+        margin-bottom: 25px;
+    }
+
+
+    .message-divider::before,
+    .message-divider::after {
+
+        width: 45px;
+    }
+
+
+    .invitation-message-text {
+
+        font-size: 18px;
+
+        line-height: 1.7;
+    }
+
+
+    .message-names {
+
+        font-size: 45px;
+
+        margin-top: 30px;
+    }
+
+}
+
+/* =========================================
+   WEDDING COUNTDOWN
+========================================= */
+
+.countdown-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 100px 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fff,
+            #f7ebe1
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.countdown-content {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+.countdown-text {
+
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    color: #806452;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   COUNTDOWN BOXES
+========================================= */
+
+.countdown-wrapper {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin: 55px auto 40px;
+}
+
+
+.countdown-box {
+
+    width: 125px;
+
+    min-height: 125px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(255, 255, 255, 0.72);
+
+    border: 1px solid rgba(160, 120, 90, 0.25);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 45px rgba(92, 64, 51, 0.10);
+
+}
+
+
+.countdown-box span {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    color: #694536;
+}
+
+
+.countdown-box small {
+
+    margin-top: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 9px;
+
+    color: #a2765d;
+}
+
+
+.countdown-separator {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 35px;
+
+    color: #b08a74;
+
+    margin-top: -20px;
+}
+
+
+/* =========================================
+   WEDDING DATE
+========================================= */
+
+.countdown-date {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 12px 25px;
+
+    border-top: 1px solid #b99984;
+
+    border-bottom: 1px solid #b99984;
+
+    color: #694536;
+}
+
+
+.countdown-date > span {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 50px;
+
+    line-height: 1;
+}
+
+
+.countdown-date div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+
+    gap: 2px;
+}
+
+
+.countdown-date strong {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 16px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+.countdown-date small {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    color: #a2765d;
+}
+
+
+/* =========================================
+   HEART & COUPLE
+========================================= */
+
+.countdown-heart {
+
+    margin-top: 35px;
+
+    color: #a2765d;
+
+    font-size: 22px;
+
+    animation:
+        heartBeat 1.8s ease-in-out infinite;
+}
+
+
+.countdown-couple {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 42px;
+
+    color: #694536;
+
+    margin-top: 5px;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   COUNTDOWN ANIMATION
+========================================= */
+
+@keyframes heartBeat {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+    }
+
+    50% {
+
+        transform: scale(1.18);
+    }
+
+}
+
+
+/* =========================================
+   COUNTDOWN MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .countdown-section {
+
+        padding: 80px 15px;
+    }
+
+
+    .countdown-text {
+
+        font-size: 18px;
+
+        line-height: 1.7;
+    }
+
+
+    .countdown-wrapper {
+
+        gap: 5px;
+
+        margin: 45px auto 35px;
+    }
+
+
+    .countdown-box {
+
+        width: 68px;
+
+        min-height: 82px;
+
+        border-radius: 15px;
+    }
+
+
+    .countdown-box span {
+
+        font-size: 30px;
+    }
+
+
+    .countdown-box small {
+
+        margin-top: 7px;
+
+        font-size: 7px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .countdown-separator {
+
+        font-size: 22px;
+
+        margin-top: -15px;
+    }
+
+
+    .countdown-date {
+
+        gap: 10px;
+
+        padding: 10px 18px;
+    }
+
+
+    .countdown-date > span {
+
+        font-size: 43px;
+    }
+
+
+    .countdown-date strong {
+
+        font-size: 14px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .countdown-date small {
+
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .countdown-heart {
+
+        margin-top: 28px;
+    }
+
+
+    .countdown-couple {
+
+        font-size: 38px;
+    }
+
+}
+
+
+/* =========================================
+   WEDDING VENUE
+========================================= */
+
+.venue-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 100px 0;
+
+    background: #fffaf5;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.venue-heading {
+
+    margin-bottom: 50px;
+}
+
+
+/* Venue Card */
+
+.venue-card {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.82),
+            rgba(248,238,229,0.72)
+        );
+
+    border: 1px solid rgba(160,120,90,0.25);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(92,64,51,0.12);
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+.venue-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 30px 70px rgba(92,64,51,0.17);
+}
+
+
+/* Icon */
+
+.venue-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid #b99984;
+
+    color: #9a6c50;
+
+    font-size: 20px;
+}
+
+
+/* Label */
+
+.venue-label {
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #a2765d;
+
+    margin-bottom: 8px;
+}
+
+
+/* Venue Name */
+
+.venue-name {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 52px;
+
+    font-weight: 400;
+
+    color: #694536;
+
+    margin: 0;
+}
+
+
+/* Divider */
+
+.venue-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin: 20px 0;
+}
+
+
+.venue-divider::before,
+.venue-divider::after {
+
+    content: "";
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #b99984;
+}
+
+
+.venue-divider span {
+
+    color: #9a6c50;
+
+    font-size: 14px;
+}
+
+
+/* Address */
+
+.venue-address {
+
+    max-width: 400px;
+
+    margin: auto;
+
+    color: #806452;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+}
+
+
+/* Date */
+
+.venue-date {
+
+    margin-top: 18px;
+
+    color: #725344;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 17px;
+
+    letter-spacing: 2px;
+}
+
+
+/* Map Button */
+
+.map-btn {
+
+    margin-top: 25px;
+
+    padding: 12px 24px;
+
+    border: 1px solid #9c745e;
+
+    border-radius: 50px;
+
+    background: transparent;
+
+    color: #694536;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+
+.map-arrow {
+
+    display: inline-block;
+
+    margin-left: 7px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.map-btn:hover {
+
+    background: #694536;
+
+    color: #fff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(105,69,54,0.20);
+}
+
+
+.map-btn:hover .map-arrow {
+
+    transform: translate(3px,-3px);
+}
+
+
+/* =========================================
+   VENUE MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .venue-section {
+
+        padding: 80px 20px;
+    }
+
+
+    .venue-heading {
+
+        margin-bottom: 40px;
+    }
+
+
+    .venue-card {
+
+        padding: 40px 20px;
+
+        border-radius: 25px;
+    }
+
+
+    .venue-icon {
+
+        width: 58px;
+
+        height: 58px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .venue-name {
+
+        font-size: 45px;
+
+        line-height: 1.15;
+    }
+
+
+    .venue-address {
+
+        font-size: 18px;
+    }
+
+
+    .venue-date {
+
+        font-size: 15px;
+    }
+
+}
+
+/* =========================================
+   THANK YOU / CLOSING
+========================================= */
+
+.thank-you-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 100px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fff,
+            #f6e7d8
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.thank-you-content {
+
+    max-width: 650px;
+
+    width: 100%;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+/* Ornament */
+
+.thank-you-ornament {
+
+    color: #a2765d;
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+.bottom-thank-you {
+
+    margin-top: 30px;
+
+    margin-bottom: 0;
+}
+
+
+/* Heading */
+
+.thank-you-content h2 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(70px, 14vw, 100px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #694536;
+
+    margin: 0 0 25px;
+}
+
+
+/* Divider */
+
+.thank-you-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.thank-you-divider::before,
+.thank-you-divider::after {
+
+    content: "";
+
+    width: 65px;
+
+    height: 1px;
+
+    background: #b99984;
+}
+
+
+.thank-you-divider span {
+
+    color: #a2765d;
+
+    font-size: 17px;
+}
+
+
+/* Text */
+
+.thank-you-text {
+
+    max-width: 470px;
+
+    margin: 0 auto 15px;
+
+    color: #806452;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+
+/* Names */
+
+.thank-you-names {
+
+    margin-top: 35px;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 52px;
+
+    color: #694536;
+}
+
+
+.thank-you-names span {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    color: #a2765d;
+
+    margin: 0 8px;
+}
+
+
+/* Date */
+
+.thank-you-date {
+
+    margin-top: 12px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+    color: #896552;
+}
+
+
+/* =========================================
+   THANK YOU MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .thank-you-section {
+
+        padding: 80px 15px;
+    }
+
+
+    .thank-you-content {
+
+        padding: 30px 10px;
+    }
+
+
+    .thank-you-ornament {
+
+        margin-bottom: 20px;
+    }
+
+
+    .thank-you-content h2 {
+
+        font-size: 72px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .thank-you-divider {
+
+        margin-bottom: 25px;
+    }
+
+
+    .thank-you-divider::before,
+    .thank-you-divider::after {
+
+        width: 45px;
+    }
+
+
+    .thank-you-text {
+
+        font-size: 18px;
+
+        line-height: 1.7;
+    }
+
+
+    .thank-you-names {
+
+        font-size: 45px;
+
+        margin-top: 28px;
+    }
+
+
+    .thank-you-date {
+
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+}
+
+/* =========================================
+   CONTINUOUS FALLING PETALS
+========================================= */
+
+.petals-container {
+
+    position: fixed !important;
+
+    inset: 0 !important;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+/* Hindi Invitation Message */
+
+.invitation-hindi-message {
+
+    max-width: 500px;
+
+    margin: 20px auto 0;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+}
+
+
+
