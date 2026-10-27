@@ -35,27 +35,84 @@ for (let i = 0; i < 25; i++) {
     petalsContainer.appendChild(petal);
 }
 
-
-
 /* =========================================
-   SCROLL DOWN
+   SCROLL DOWN + AUTO WEDDING MUSIC
 ========================================= */
 
 const openButton = document.getElementById("openInvitation");
 const openingSection = document.getElementById("opening-section");
+const weddingMusic = document.getElementById("weddingMusic");
 
-openButton.addEventListener("click", function (event) {
-    event.preventDefault();
+let musicStarted = false;
 
-    const sectionHeight = openingSection.offsetHeight;
+function startWeddingMusic() {
+    if (!weddingMusic || musicStarted) return;
 
-    window.scrollTo({
-        top: window.scrollY + sectionHeight,
-        behavior: "smooth"
+    weddingMusic.volume = 0.5;
+    weddingMusic.loop = true;
+
+    weddingMusic.play()
+        .then(function () {
+            musicStarted = true;
+            removeMusicListeners();
+        })
+        .catch(function (error) {
+            console.log("Waiting for another interaction to play music.");
+        });
+}
+
+function removeMusicListeners() {
+    document.removeEventListener("touchstart", handleInteraction);
+    document.removeEventListener("pointerdown", handleInteraction);
+    document.removeEventListener("keydown", handleInteraction);
+
+    window.removeEventListener("scroll", handleInteraction);
+    window.removeEventListener("touchmove", handleInteraction);
+    window.removeEventListener("wheel", handleInteraction);
+}
+
+function handleInteraction() {
+    startWeddingMusic();
+}
+
+// Scroll Down button
+if (openButton && openingSection) {
+    openButton.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        startWeddingMusic();
+
+        const sectionHeight = openingSection.offsetHeight;
+
+        window.scrollTo({
+            top: window.scrollY + sectionHeight,
+            behavior: "smooth"
+        });
     });
+}
+
+// Direct touch, swipe, mouse, keyboard and scroll
+document.addEventListener("touchstart", handleInteraction, {
+    passive: true
 });
 
+document.addEventListener("pointerdown", handleInteraction, {
+    passive: true
+});
 
+document.addEventListener("keydown", handleInteraction);
+
+window.addEventListener("scroll", handleInteraction, {
+    passive: true
+});
+
+window.addEventListener("touchmove", handleInteraction, {
+    passive: true
+});
+
+window.addEventListener("wheel", handleInteraction, {
+    passive: true
+});
 
 /* =========================================
    WEDDING COUNTDOWN
