@@ -904,6 +904,18 @@ body {
     line-height: 1.8;
 }
 
+.person-info p1{
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    color: black;
+
+    margin-bottom: 10px;
+}
 
 /* Mobile */
 
