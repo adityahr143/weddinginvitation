@@ -906,15 +906,15 @@ body {
 
 .person-info p1{
 
-    font-family: "Great Vibes", cursive;
+     max-width: 330px;
 
-    font-size: 20px;
-
-    font-weight: 400;
+    margin: auto;
 
     color: black;
 
-    margin-bottom: 10px;
+    font-size: 14px;
+
+    line-height: 1.8;
 }
 
 /* Mobile */
